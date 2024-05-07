@@ -1,5 +1,8 @@
+import 'package:e_commerce_app/controllers/wishlist_controller.dart';
+import 'package:e_commerce_app/models/product_model.dart';
 import 'package:e_commerce_app/views/home_view.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class SpalshView extends StatefulWidget {
   const SpalshView({super.key});
@@ -21,13 +24,17 @@ class _SpalshViewState extends State<SpalshView> {
 
   @override
   Widget build(BuildContext context) {
+    
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.white,
         body: Center(
           child: Image.network(
               'https://cdn.dribbble.com/userupload/9903003/file/original-8eae5aec60527b67b7678e42aa2d8645.jpg?resize=1024x768'),
         ),
+        
       ),
+      
     );
   }
 }

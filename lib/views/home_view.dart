@@ -1,8 +1,11 @@
 import 'dart:convert';
 
+import 'package:e_commerce_app/controllers/cart_controller.dart';
 import 'package:e_commerce_app/models/product_model.dart';
+import 'package:e_commerce_app/views/cart_view.dart';
 import 'package:e_commerce_app/views/product_details_view.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key});
@@ -23,7 +26,14 @@ class HomeView extends StatelessWidget {
           ),
           actions: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => CartView(),
+                  ),
+                );
+              },
               icon: const Icon(
                 Icons.shopping_cart,
                 color: Colors.white,
@@ -128,7 +138,9 @@ class HomeView extends StatelessWidget {
                                     children: [
                                       IconButton(
                                         onPressed: () {
-                                          // Add to cart functionality
+                                          Provider.of<CartController>(context,
+                                                  listen: false)
+                                              .addToCart(product);
                                         },
                                         icon: Icon(Icons.add_shopping_cart),
                                       ),
