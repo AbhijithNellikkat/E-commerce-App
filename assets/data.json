@@ -3,49 +3,49 @@
       "name": "Margherita Pizza",
       "description": "Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.",
       "price": "$9.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+      "image": "https://b.zmtcdn.com/data/pictures/5/18808035/c9677661058854b4d41bfab5dbddd6ac.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*"
     },
     {
       "name": "Chicken Tikka Masala",
       "description": "Tender chicken pieces marinated in yogurt and spices, cooked in a creamy tomato sauce.",
       "price": "$12.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+      "image": "https://img.freepik.com/free-photo/vertical-shot-traditional-indian-paneer-butter-masala-cheese-cottage-curry-black-surface_181624-32001.jpg?size=626&ext=jpg&ga=GA1.1.2056273599.1671702409&semt=sph"
     },
     {
       "name": "Sushi Combo Platter",
       "description": "Assorted sushi rolls including California, Salmon, and Tuna, served with soy sauce and pickled ginger.",
       "price": "$15.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+      "image": "https://img.freepik.com/free-photo/flame-grilled-meat-cooking-flames-generative-ai_188544-12355.jpg?w=1060&t=st=1715061234~exp=1715061834~hmac=3aeb90fbd35bd53c23b1eea280eba6127235d346ec23d1fbac59a27ecc6d5ffd"
     },
     {
       "name": "Hamburger",
       "description": "Juicy beef patty topped with lettuce, tomato, onions, and pickles, served on a sesame seed bun.",
       "price": "$8.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+      "image": "https://img.freepik.com/free-photo/top-view-tasty-julienne-bowls-raw-mushrooms-brown_140725-145295.jpg?w=360&t=st=1715061254~exp=1715061854~hmac=3ea64c0319440550983dd4e546a5007f158be53aca548ec47a21ac37c4eb7172"
     },
     {
       "name": "Pad Thai Noodles",
       "description": "Stir-fried rice noodles with shrimp, tofu, bean sprouts, and peanuts in a tangy tamarind sauce.",
       "price": "$10.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+      "image": "https://img.freepik.com/free-photo/traditional-indian-soup-lentils-indian-dhal-spicy-curry-bowl-spices-herbs-rustic-black-wooden-table_2829-18717.jpg?w=996&t=st=1715061411~exp=1715062011~hmac=d8ecfc3cb4bde1ea8aeba55b8c26e6ba63c4d5c640af4f82144edfa3dc7072c3"
     },
     {
       "name": "Chicken Caesar Salad",
       "description": "Fresh romaine lettuce tossed with grilled chicken, croutons, Parmesan cheese, and Caesar dressing.",
       "price": "$7.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+      "image": "https://img.freepik.com/free-photo/delicious-asian-noodles-concept_23-2148773773.jpg?w=360&t=st=1715061431~exp=1715062031~hmac=96dcb3843efcab90dfb4ec8bffa9a154450329e9c031b8e16ec7a1be3f608135"
     },
     {
       "name": "Vegetable Biryani",
       "description": "Fragrant basmati rice cooked with mixed vegetables, aromatic spices, and herbs.",
       "price": "$11.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+      "image": "https://img.freepik.com/premium-photo/nepali-steamed-dumplings-momo-with-sause_1472-70086.jpg?w=996"
     },
     {
       "name": "Cheeseburger",
       "description": "Grilled beef patty topped with melted cheese, lettuce, tomato, onions, and pickles, served on a bun.",
       "price": "$9.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+      "image": "https://img.freepik.com/premium-photo/paneer-tikka-is-indian-dish-made-from-chunks-cottage-cheese-marinated-spices-grilled-tandoor_466689-76797.jpg?w=360"
     },
     {
       "name": "Margarita Cocktail",
