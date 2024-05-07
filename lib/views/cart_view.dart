@@ -1,10 +1,11 @@
 import 'package:e_commerce_app/controllers/cart_controller.dart';
 import 'package:e_commerce_app/models/product_model.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 import 'package:provider/provider.dart';
 
 class CartView extends StatelessWidget {
-  const CartView({Key? key}) : super(key: key);
+  const CartView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +29,12 @@ class CartView extends StatelessWidget {
       body: Consumer<CartController>(
         builder: (context, cartController, child) {
           List<ProductModel> cartItems = cartController.cartItems;
+
+          if (cartItems.isEmpty) {
+            return Center(
+              child: Lottie.asset('assets/animation/emptycart.json'),
+            );
+          }
           return ListView.builder(
             itemCount: cartItems.length,
             itemBuilder: (context, index) {
@@ -60,25 +67,26 @@ class CartView extends StatelessWidget {
                     children: [
                       IconButton(
                         onPressed: () {
-                          cartController.incrementQuantity(product);
+                          cartController.decrementQuantity(product);
                         },
                         icon: const Icon(
-                          Icons.add,
+                          Icons.remove,
                           color: Colors.white,
                         ),
                       ),
                       Text(
                         '${product.quantity}',
                         style: const TextStyle(
-                          color: Colors.white,
-                        ),
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14),
                       ),
                       IconButton(
                         onPressed: () {
-                          cartController.decrementQuantity(product);
+                          cartController.incrementQuantity(product);
                         },
                         icon: const Icon(
-                          Icons.remove,
+                          Icons.add,
                           color: Colors.white,
                         ),
                       ),
@@ -114,7 +122,7 @@ class CartView extends StatelessWidget {
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
-                    color: Colors.white,
+                    color: Colors.green,
                   ),
                 ),
                 ElevatedButton(

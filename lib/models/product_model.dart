@@ -3,15 +3,15 @@ class ProductModel {
   String? description;
   String? price;
   String? image;
-  int quantity; // New field for quantity
-
-  ProductModel({
-    this.name,
-    this.description,
-    this.price,
-    this.image,
-    this.quantity = 1, // Default quantity is 1
-  });
+  int quantity;
+  bool isFavorite;
+  ProductModel(
+      {this.name,
+      this.description,
+      this.price,
+      this.image,
+      this.quantity = 1,
+      this.isFavorite = false});
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
     return ProductModel(
@@ -19,7 +19,7 @@ class ProductModel {
       description: json["description"],
       price: json["price"],
       image: json["image"],
-      quantity: 1, // Default quantity is 1
+      quantity: 1,
     );
   }
 
@@ -29,7 +29,7 @@ class ProductModel {
       "description": description,
       "price": price,
       "image": image,
-      "quantity": quantity, // Include quantity in the JSON output
+      "quantity": quantity,
     };
   }
 }

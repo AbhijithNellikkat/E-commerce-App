@@ -1,13 +1,16 @@
 import 'dart:convert';
 
 import 'package:e_commerce_app/controllers/cart_controller.dart';
+import 'package:e_commerce_app/controllers/wishlist_controller.dart';
 import 'package:e_commerce_app/models/product_model.dart';
 import 'package:e_commerce_app/views/cart_view.dart';
 import 'package:e_commerce_app/views/product_details_view.dart';
+import 'package:e_commerce_app/views/wishlist_view.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 class HomeView extends StatelessWidget {
+  // ignore: use_key_in_widget_constructors
   const HomeView({Key? key});
 
   @override
@@ -25,26 +28,89 @@ class HomeView extends StatelessWidget {
             ),
           ),
           actions: [
-            IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => CartView(),
-                  ),
+            Consumer<WishlistController>(
+              builder: (context, wishlistProvider, _) {
+                int wishlistCount = wishlistProvider.wishlist.length;
+                return Stack(
+                  children: [
+                    IconButton(
+                      icon: const Icon(
+                        Icons.favorite,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => WishlistView(
+                              onFavoriteToggle: wishlistProvider.toggleFavorite,
+                              wishlist: wishlistProvider.wishlist,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
+                    wishlistCount > 0
+                        ? Positioned(
+                            top: 8,
+                            right: 8,
+                            child: CircleAvatar(
+                              radius: 9,
+                              backgroundColor: Colors.red,
+                              child: Text(
+                                '$wishlistCount',
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ),
+                          )
+                        : const SizedBox.shrink(),
+                  ],
                 );
               },
-              icon: const Icon(
-                Icons.shopping_cart,
-                color: Colors.white,
-              ),
             ),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.favorite,
-                color: Colors.white,
-              ),
+            Consumer<CartController>(
+              builder: (context, cartProvider, _) {
+                int cartCount = cartProvider.cartItems.length;
+                return Stack(
+                  children: [
+                    IconButton(
+                      icon: const Icon(
+                        Icons.shopping_cart,
+                        size: 30,
+                        color: Colors.white,
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const CartView(),
+                          ),
+                        );
+                      },
+                    ),
+                    cartCount > 0
+                        ? Positioned(
+                            top: 8,
+                            right: 8,
+                            child: CircleAvatar(
+                              radius: 9,
+                              backgroundColor: Colors.red,
+                              child: Text(
+                                '$cartCount',
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 12,
+                                ),
+                              ),
+                            ),
+                          )
+                        : const SizedBox.shrink(),
+                  ],
+                );
+              },
             ),
             const SizedBox(
               width: 10,
@@ -94,11 +160,10 @@ class HomeView extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Container(
-                              height:
-                                  200, // Set a fixed height for the image container
+                            SizedBox(
+                              height: 200,
                               child: ClipRRect(
-                                borderRadius: BorderRadius.vertical(
+                                borderRadius: const BorderRadius.vertical(
                                   top: Radius.circular(12),
                                 ),
                                 child: Image.network(
@@ -115,23 +180,23 @@ class HomeView extends StatelessWidget {
                                 children: [
                                   Text(
                                     '${product.name}',
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 16,
                                       fontWeight: FontWeight.bold,
                                     ),
                                     maxLines: 1,
                                     overflow: TextOverflow.ellipsis,
                                   ),
-                                  SizedBox(height: 4),
+                                  const SizedBox(height: 4),
                                   Text(
                                     '${product.price}',
-                                    style: TextStyle(
+                                    style: const TextStyle(
                                       fontSize: 14,
                                       fontWeight: FontWeight.bold,
                                       color: Colors.green,
                                     ),
                                   ),
-                                  SizedBox(height: 8),
+                                  const SizedBox(height: 8),
                                   Row(
                                     mainAxisAlignment:
                                         MainAxisAlignment.spaceBetween,
@@ -142,13 +207,27 @@ class HomeView extends StatelessWidget {
                                                   listen: false)
                                               .addToCart(product);
                                         },
-                                        icon: Icon(Icons.add_shopping_cart),
+                                        icon:
+                                            const Icon(Icons.add_shopping_cart),
                                       ),
-                                      IconButton(
-                                        onPressed: () {
-                                          // Add to wishlist functionality
+                                      Consumer<WishlistController>(
+                                        builder: (context, controller, _) {
+                                          return IconButton(
+                                            onPressed: () {
+                                              controller
+                                                  .toggleFavorite(product);
+                                            },
+                                            icon: Icon(
+                                              product.isFavorite
+                                                  ? Icons.favorite
+                                                  : Icons.favorite_border,
+                                              color: product.isFavorite
+                                                  ? Colors.red
+                                                  : null,
+                                              size: 23,
+                                            ),
+                                          );
                                         },
-                                        icon: Icon(Icons.favorite_border),
                                       ),
                                     ],
                                   ),

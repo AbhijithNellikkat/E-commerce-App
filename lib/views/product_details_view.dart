@@ -1,5 +1,7 @@
+import 'package:e_commerce_app/controllers/cart_controller.dart';
 import 'package:e_commerce_app/models/product_model.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class ProductDetailsView extends StatelessWidget {
   final ProductModel product;
@@ -76,15 +78,10 @@ class ProductDetailsView extends StatelessWidget {
                       children: [
                         ElevatedButton(
                           onPressed: () {
-                            // Add to cart functionality
+                            Provider.of<CartController>(context, listen: false)
+                                .addToCart(product);
                           },
                           child: const Text('Add to Cart'),
-                        ),
-                        ElevatedButton(
-                          onPressed: () {
-                            // Add to wishlist functionality
-                          },
-                          child: const Text('Add to Wishlist'),
                         ),
                       ],
                     ),

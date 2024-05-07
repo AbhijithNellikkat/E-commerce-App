@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           create: (context) => CartController(),
         ),
         ChangeNotifierProvider(
-          create: (context) => WishListController(),
+          create: (context) => WishlistController(),
         ),
       ],
       child: MaterialApp(
