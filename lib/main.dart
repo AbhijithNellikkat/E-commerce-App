@@ -1,3 +1,4 @@
+import 'package:e_commerce_app/views/splash_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,12 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'E-commerce App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const Scaffold(),
+      home: SpalshView(),
     );
   }
 }
