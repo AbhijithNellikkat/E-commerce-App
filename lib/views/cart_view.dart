@@ -12,13 +12,14 @@ class CartView extends StatelessWidget {
       appBar: AppBar(
         automaticallyImplyLeading: false,
         leading: IconButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            icon: const Icon(
-              Icons.arrow_back,
-              color: Colors.white,
-            )),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          icon: const Icon(
+            Icons.arrow_back,
+            color: Colors.white,
+          ),
+        ),
         title: const Text(
           'Cart',
           style: TextStyle(color: Colors.white),
@@ -58,20 +59,24 @@ class CartView extends StatelessWidget {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          cartController.incrementQuantity(product);
+                        },
                         icon: const Icon(
                           Icons.add,
                           color: Colors.white,
                         ),
                       ),
-                      const Text(
-                        '${8}',
-                        style: TextStyle(
+                      Text(
+                        '${product.quantity}',
+                        style: const TextStyle(
                           color: Colors.white,
                         ),
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          cartController.decrementQuantity(product);
+                        },
                         icon: const Icon(
                           Icons.remove,
                           color: Colors.white,
@@ -96,11 +101,7 @@ class CartView extends StatelessWidget {
       ),
       bottomNavigationBar: Consumer<CartController>(
         builder: (context, cartController, child) {
-          double totalAmount = cartController.cartItems.fold(
-            0,
-            (previousValue, product) =>
-                previousValue + double.parse(product.price!.substring(1)),
-          );
+          double totalAmount = cartController.getTotalAmount();
 
           return Container(
             color: const Color.fromARGB(102, 33, 33, 33),
@@ -109,7 +110,7 @@ class CartView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
-                  'Total: \$${totalAmount.toStringAsFixed(2)}', // Format total amount to display 2 decimal places
+                  'Total: \$${totalAmount.toStringAsFixed(2)}',
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
@@ -117,7 +118,9 @@ class CartView extends StatelessWidget {
                   ),
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    // Implement your checkout logic here
+                  },
                   style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(
                       const Color.fromARGB(170, 35, 35, 35),

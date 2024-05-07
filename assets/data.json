@@ -1,189 +1,188 @@
 [
-    {
-      "name": "Margherita Pizza",
-      "description": "Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.",
-      "price": "$9.99",
-      "image": "https://b.zmtcdn.com/data/pictures/5/18808035/c9677661058854b4d41bfab5dbddd6ac.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*"
-    },
-    {
-      "name": "Chicken Tikka Masala",
-      "description": "Tender chicken pieces marinated in yogurt and spices, cooked in a creamy tomato sauce.",
-      "price": "$12.99",
-      "image": "https://img.freepik.com/free-photo/vertical-shot-traditional-indian-paneer-butter-masala-cheese-cottage-curry-black-surface_181624-32001.jpg?size=626&ext=jpg&ga=GA1.1.2056273599.1671702409&semt=sph"
-    },
-    {
-      "name": "Sushi Combo Platter",
-      "description": "Assorted sushi rolls including California, Salmon, and Tuna, served with soy sauce and pickled ginger.",
-      "price": "$15.99",
-      "image": "https://img.freepik.com/free-photo/flame-grilled-meat-cooking-flames-generative-ai_188544-12355.jpg?w=1060&t=st=1715061234~exp=1715061834~hmac=3aeb90fbd35bd53c23b1eea280eba6127235d346ec23d1fbac59a27ecc6d5ffd"
-    },
-    {
-      "name": "Hamburger",
-      "description": "Juicy beef patty topped with lettuce, tomato, onions, and pickles, served on a sesame seed bun.",
-      "price": "$8.99",
-      "image": "https://img.freepik.com/free-photo/top-view-tasty-julienne-bowls-raw-mushrooms-brown_140725-145295.jpg?w=360&t=st=1715061254~exp=1715061854~hmac=3ea64c0319440550983dd4e546a5007f158be53aca548ec47a21ac37c4eb7172"
-    },
-    {
-      "name": "Pad Thai Noodles",
-      "description": "Stir-fried rice noodles with shrimp, tofu, bean sprouts, and peanuts in a tangy tamarind sauce.",
-      "price": "$10.99",
-      "image": "https://img.freepik.com/free-photo/traditional-indian-soup-lentils-indian-dhal-spicy-curry-bowl-spices-herbs-rustic-black-wooden-table_2829-18717.jpg?w=996&t=st=1715061411~exp=1715062011~hmac=d8ecfc3cb4bde1ea8aeba55b8c26e6ba63c4d5c640af4f82144edfa3dc7072c3"
-    },
-    {
-      "name": "Chicken Caesar Salad",
-      "description": "Fresh romaine lettuce tossed with grilled chicken, croutons, Parmesan cheese, and Caesar dressing.",
-      "price": "$7.99",
-      "image": "https://img.freepik.com/free-photo/delicious-asian-noodles-concept_23-2148773773.jpg?w=360&t=st=1715061431~exp=1715062031~hmac=96dcb3843efcab90dfb4ec8bffa9a154450329e9c031b8e16ec7a1be3f608135"
-    },
-    {
-      "name": "Vegetable Biryani",
-      "description": "Fragrant basmati rice cooked with mixed vegetables, aromatic spices, and herbs.",
-      "price": "$11.99",
-      "image": "https://img.freepik.com/premium-photo/nepali-steamed-dumplings-momo-with-sause_1472-70086.jpg?w=996"
-    },
-    {
-      "name": "Cheeseburger",
-      "description": "Grilled beef patty topped with melted cheese, lettuce, tomato, onions, and pickles, served on a bun.",
-      "price": "$9.99",
-      "image": "https://img.freepik.com/premium-photo/paneer-tikka-is-indian-dish-made-from-chunks-cottage-cheese-marinated-spices-grilled-tandoor_466689-76797.jpg?w=360"
-    },
-    {
-      "name": "Margarita Cocktail",
-      "description": "Classic cocktail made with tequila, lime juice, and triple sec, served with a salt rim.",
-      "price": "$6.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Penne Arrabiata",
-      "description": "Penne pasta tossed in a spicy tomato sauce with garlic, chili flakes, and fresh basil.",
-      "price": "$10.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "BBQ Chicken Wings",
-      "description": "Crispy chicken wings smothered in tangy barbecue sauce, served with ranch dipping sauce.",
-      "price": "$8.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    { 
-      "name": "Margherita Flatbread",
-      "description": "Thin crust flatbread topped with marinara sauce, fresh mozzarella cheese, and basil leaves.",
-      "price": "$9.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Chicken Fried Rice",
-      "description": "Stir-fried rice with diced chicken, eggs, mixed vegetables, and soy sauce.",
-      "price": "$11.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Chocolate Brownie Sundae",
-      "description": "Warm chocolate brownie topped with vanilla ice cream, whipped cream, and chocolate sauce.",
-      "price": "$6.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Mushroom Risotto",
-      "description": "Creamy Italian rice dish cooked with mushrooms, garlic, onions, and Parmesan cheese.",
-      "price": "$12.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Fish and Chips",
-      "description": "Crispy battered fish fillets served with thick-cut fries, tartar sauce, and lemon wedges.",
-      "price": "$13.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Vegetable Spring Rolls",
-      "description": "Crispy spring rolls filled with mixed vegetables, served with sweet chili dipping sauce.",
-      "price": "$5.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Chicken Shawarma Wrap",
-      "description": "Grilled chicken wrapped in a warm pita bread with lettuce, tomatoes, onions, and garlic sauce.",
-      "price": "$8.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Caprese Salad",
-      "description": "Fresh tomato slices, mozzarella cheese, and basil leaves drizzled with balsamic glaze.",
-      "price": "$7.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Beef Tacos",
-      "description": "Soft corn tortillas filled with seasoned ground beef, lettuce, cheese, and salsa.",
-      "price": "$9.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Chicken Korma",
-      "description": "Tender chicken pieces cooked in a creamy cashew nut sauce with aromatic spices.",
-      "price": "$12.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Veggie Burger",
-      "description": "Grilled vegetable patty topped with lettuce, tomato, onions, and pickles, served on a bun.",
-      "price": "$8.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Chicken Caesar Wrap",
-      "description": "Grilled chicken, romaine lettuce, Parmesan cheese, and Caesar dressing wrapped in a flour tortilla.",
-      "price": "$7.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Veggie Pizza",
-      "description": "Delicious vegetarian pizza loaded with assorted veggies and melted cheese on a crispy crust.",
-      "price": "$11.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Chicken Noodle Soup",
-      "description": "Hearty soup with tender chicken, vegetables, and egg noodles in a flavorful broth.",
-      "price": "$6.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Beef Burrito",
-      "description": "Large flour tortilla stuffed with seasoned beef, rice, beans, cheese, and salsa.",
-      "price": "$10.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Pesto Pasta",
-      "description": "Spaghetti pasta tossed in a creamy pesto sauce with garlic, pine nuts, and Parmesan cheese.",
-      "price": "$9.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Tiramisu",
-      "description": "Classic Italian dessert made with layers of espresso-soaked ladyfingers and mascarpone cheese, dusted with cocoa powder.",
-      "price": "$5.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Vegetable Samosa",
-      "description": "Crispy pastry filled with spiced potatoes, peas, and vegetables, served with mint chutney.",
-      "price": "$4.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Shrimp Scampi",
-      "description": "Succulent shrimp sautéed in garlic, butter, lemon juice, and white wine, served over pasta.",
-      "price": "$14.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    },
-    {
-      "name": "Falafel Plate",
-      "description": "Crispy falafel balls served with hummus, tabbouleh, pita bread, and tahini sauce.",
-      "price": "$8.99",
-      "image": "https://dummyimage.com/300x200/ccc/000.jpg"
-    }
-  ]
-  
+  {
+    "name": "Margherita Pizza",
+    "description": "Classic Italian pizza topped with tomato sauce, mozzarella cheese, and fresh basil leaves.",
+    "price": "$9.99",
+    "image": "https://b.zmtcdn.com/data/pictures/5/18808035/c9677661058854b4d41bfab5dbddd6ac.jpg?output-format=webp&fit=around|771.75:416.25&crop=771.75:416.25;*,*"
+  },
+  {
+    "name": "Chicken Tikka Masala",
+    "description": "Tender chicken pieces marinated in yogurt and spices, cooked in a creamy tomato sauce.",
+    "price": "$12.99",
+    "image": "https://img.freepik.com/free-photo/vertical-shot-traditional-indian-paneer-butter-masala-cheese-cottage-curry-black-surface_181624-32001.jpg?size=626&ext=jpg&ga=GA1.1.2056273599.1671702409&semt=sph"
+  },
+  {
+    "name": "Sushi Combo Platter",
+    "description": "Assorted sushi rolls including California, Salmon, and Tuna, served with soy sauce and pickled ginger.",
+    "price": "$15.99",
+    "image": "https://img.freepik.com/free-photo/flame-grilled-meat-cooking-flames-generative-ai_188544-12355.jpg?w=1060&t=st=1715061234~exp=1715061834~hmac=3aeb90fbd35bd53c23b1eea280eba6127235d346ec23d1fbac59a27ecc6d5ffd"
+  },
+  {
+    "name": "Hamburger",
+    "description": "Juicy beef patty topped with lettuce, tomato, onions, and pickles, served on a sesame seed bun.",
+    "price": "$8.99",
+    "image": "https://img.freepik.com/free-photo/top-view-tasty-julienne-bowls-raw-mushrooms-brown_140725-145295.jpg?w=360&t=st=1715061254~exp=1715061854~hmac=3ea64c0319440550983dd4e546a5007f158be53aca548ec47a21ac37c4eb7172"
+  },
+  {
+    "name": "Pad Thai Noodles",
+    "description": "Stir-fried rice noodles with shrimp, tofu, bean sprouts, and peanuts in a tangy tamarind sauce.",
+    "price": "$10.99",
+    "image": "https://img.freepik.com/free-photo/traditional-indian-soup-lentils-indian-dhal-spicy-curry-bowl-spices-herbs-rustic-black-wooden-table_2829-18717.jpg?w=996&t=st=1715061411~exp=1715062011~hmac=d8ecfc3cb4bde1ea8aeba55b8c26e6ba63c4d5c640af4f82144edfa3dc7072c3"
+  },
+  {
+    "name": "Chicken Caesar Salad",
+    "description": "Fresh romaine lettuce tossed with grilled chicken, croutons, Parmesan cheese, and Caesar dressing.",
+    "price": "$7.99",
+    "image": "https://img.freepik.com/free-photo/delicious-asian-noodles-concept_23-2148773773.jpg?w=360&t=st=1715061431~exp=1715062031~hmac=96dcb3843efcab90dfb4ec8bffa9a154450329e9c031b8e16ec7a1be3f608135"
+  },
+  {
+    "name": "Vegetable Biryani",
+    "description": "Fragrant basmati rice cooked with mixed vegetables, aromatic spices, and herbs.",
+    "price": "$11.99",
+    "image": "https://img.freepik.com/premium-photo/nepali-steamed-dumplings-momo-with-sause_1472-70086.jpg?w=996"
+  },
+  {
+    "name": "Cheeseburger",
+    "description": "Grilled beef patty topped with melted cheese, lettuce, tomato, onions, and pickles, served on a bun.",
+    "price": "$9.99",
+    "image": "https://img.freepik.com/premium-photo/paneer-tikka-is-indian-dish-made-from-chunks-cottage-cheese-marinated-spices-grilled-tandoor_466689-76797.jpg?w=360"
+  },
+  {
+    "name": "Margarita Cocktail",
+    "description": "Classic cocktail made with tequila, lime juice, and triple sec, served with a salt rim.",
+    "price": "$6.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Penne Arrabiata",
+    "description": "Penne pasta tossed in a spicy tomato sauce with garlic, chili flakes, and fresh basil.",
+    "price": "$10.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "BBQ Chicken Wings",
+    "description": "Crispy chicken wings smothered in tangy barbecue sauce, served with ranch dipping sauce.",
+    "price": "$8.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  { 
+    "name": "Margherita Flatbread",
+    "description": "Thin crust flatbread topped with marinara sauce, fresh mozzarella cheese, and basil leaves.",
+    "price": "$9.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Chicken Fried Rice",
+    "description": "Stir-fried rice with diced chicken, eggs, mixed vegetables, and soy sauce.",
+    "price": "$11.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Chocolate Brownie Sundae",
+    "description": "Warm chocolate brownie topped with vanilla ice cream, whipped cream, and chocolate sauce.",
+    "price": "$6.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Mushroom Risotto",
+    "description": "Creamy Italian rice dish cooked with mushrooms, garlic, onions, and Parmesan cheese.",
+    "price": "$12.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Fish and Chips",
+    "description": "Crispy battered fish fillets served with thick-cut fries, tartar sauce, and lemon wedges.",
+    "price": "$13.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Vegetable Spring Rolls",
+    "description": "Crispy spring rolls filled with mixed vegetables, served with sweet chili dipping sauce.",
+    "price": "$5.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Chicken Shawarma Wrap",
+    "description": "Grilled chicken wrapped in a warm pita bread with lettuce, tomatoes, onions, and garlic sauce.",
+    "price": "$8.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Caprese Salad",
+    "description": "Fresh tomato slices, mozzarella cheese, and basil leaves drizzled with balsamic glaze.",
+    "price": "$7.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Beef Tacos",
+    "description": "Soft corn tortillas filled with seasoned ground beef, lettuce, cheese, and salsa.",
+    "price": "$9.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Chicken Korma",
+    "description": "Tender chicken pieces cooked in a creamy cashew nut sauce with aromatic spices.",
+    "price": "$12.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Veggie Burger",
+    "description": "Grilled vegetable patty topped with lettuce, tomato, onions, and pickles, served on a bun.",
+    "price": "$8.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Chicken Caesar Wrap",
+    "description": "Grilled chicken, romaine lettuce, Parmesan cheese, and Caesar dressing wrapped in a flour tortilla.",
+    "price": "$7.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Veggie Pizza",
+    "description": "Delicious vegetarian pizza loaded with assorted veggies and melted cheese on a crispy crust.",
+    "price": "$11.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Chicken Noodle Soup",
+    "description": "Hearty soup with tender chicken, vegetables, and egg noodles in a flavorful broth.",
+    "price": "$6.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Beef Burrito",
+    "description": "Large flour tortilla stuffed with seasoned beef, rice, beans, cheese, and salsa.",
+    "price": "$10.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Pesto Pasta",
+    "description": "Spaghetti pasta tossed in a creamy pesto sauce with garlic, pine nuts, and Parmesan cheese.",
+    "price": "$9.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Tiramisu",
+    "description": "Classic Italian dessert made with layers of espresso-soaked ladyfingers and mascarpone cheese, dusted with cocoa powder.",
+    "price": "$5.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Vegetable Samosa",
+    "description": "Crispy pastry filled with spiced potatoes, peas, and vegetables, served with mint chutney.",
+    "price": "$4.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Shrimp Scampi",
+    "description": "Succulent shrimp sautéed in garlic, butter, lemon juice, and white wine, served over pasta.",
+    "price": "$14.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  },
+  {
+    "name": "Falafel Plate",
+    "description": "Crispy falafel balls served with hummus, tabbouleh, pita bread, and tahini sauce.",
+    "price": "$8.99",
+    "image": "https://dummyimage.com/300x200/ccc/000.jpg"
+  }
+]
